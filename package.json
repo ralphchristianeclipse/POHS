@@ -1,0 +1,17 @@
+{
+  "name": "vue-boilerplate",
+  "version": "1.0.0",
+  "description": "> A Vue.js project",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "apollo-client": "^1.3.0",
+    "subscriptions-transport-ws": "^0.7.0",
+    "vue": "^2.3.3",
+    "vue-router": "^2.5.3",
+    "vuetify": "^0.12.2",
+    "vuex": "^2.3.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
