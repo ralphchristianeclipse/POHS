@@ -1,6 +1,6 @@
 
-query product($id: ID) {
-    product: Product() {
+query product($id: ID!) {
+    product: Product(id: $id) {
         id
         name
         price

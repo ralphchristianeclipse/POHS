@@ -11,6 +11,6 @@ let components = {
         'ProductPage'
     ]),
 };
-Vue.component('product-card',components.Product);
+Vue.component('product-card',components.ProductCard);
 Vue.component('product-page',components.ProductPage);
 export default components;
