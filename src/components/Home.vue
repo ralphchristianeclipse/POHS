@@ -1,15 +1,17 @@
 <template lang="pug">
-	v-app
+	v-app(dark)
 		v-toolbar
-			v-toolbar-logo Fuck
+			v-toolbar-title.white--text {{$route.name.toUpperCase()}}
 		main
 			v-container(fluid)
-				| Yeah
+				//v-layout(row wrap)
+					v-flex(xs12 sm6 md3 lg2 v-for="(product,index) in allProducts", :key="index").mb-4
+						product(:product="product")
 </template>
 
 <script>
-	import {mapGetters} from 'vuex';
 	export default {
 		name: 'home',
+
 	}
 </script>

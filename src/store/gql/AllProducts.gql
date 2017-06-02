@@ -1,0 +1,16 @@
+
+query products {
+    products: allProducts {
+        id
+        name
+        price
+        image
+        user {
+            id
+            firstName
+            lastName
+        }
+    }    
+}
+
+

@@ -7,6 +7,10 @@ let components = {
     App,
     ...asyncComponents([
         'Home',
+        'ProductCard',
+        'ProductPage'
     ]),
 };
+Vue.component('product-card',components.Product);
+Vue.component('product-page',components.ProductPage);
 export default components;

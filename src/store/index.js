@@ -1,21 +1,34 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-
-import router from '../router';
-
+import client from './apollo'
+import AllProducts from './gql/AllProducts.gql';
 Vue.use(Vuex);
 
-const getters = {};
-const mutations = {};
-const actions = {};
-const state = {};
+const getters = {
+ 
+}
+
+const mutations = {
+
+}
+
+const actions = {
+    async allProducts({commit}) {
+        let {data} = await client.query({query: AllProducts})
+        console.log(data);
+    }
+}
+
+const state = {
+
+}
 
 const store = new Vuex.Store({
-	state,
-	mutations,
-	getters,
-	actions
-});
+    state,
+    getters,
+    mutations,
+    actions,
 
-
-export default store;
+})
+store.dispatch('allProducts');
+export default store

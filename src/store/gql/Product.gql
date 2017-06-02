@@ -1,0 +1,11 @@
+
+query product($id: ID) {
+    product: Product() {
+        id
+        name
+        price
+        image
+    }    
+}
+
+
